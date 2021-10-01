@@ -1,8 +1,8 @@
 import React from 'react'
-import { ThemeProvider } from '@mui/material/styles'
+import { ThemeProvider } from '@material-ui/core'
 
-import theme from './ui/theme'
-import Header from '../components/ui/Header'
+import theme from './ui/Theme'
+import Header from './ui/Header'
 
 function App() {
   return (
