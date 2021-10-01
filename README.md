@@ -2,7 +2,8 @@
 
 ```
 npm react-router-dom
-npm install @mui/material @emotion/react @emotion/styled
+npm i @mui/material @emotion/react @emotion/styled
 npm i @material-ui/core
+npm i @mui/styles
 
 ```
