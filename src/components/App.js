@@ -8,7 +8,7 @@ import Header from './ui/Header'
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Header />      
+      <Header />     
     </ThemeProvider>
   );
 }
