@@ -1,7 +1,8 @@
 import React from 'react'
-import AppBar from '@material-ui/core/AppBar'
-import ToolBar from '@material-ui/core/Toolbar'
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
+import { Typography } from '@mui/material';
 
 
 function ElevationScroll(props: Props) {
@@ -20,10 +21,10 @@ function ElevationScroll(props: Props) {
 export default function Header(props) {
     return (
         <ElevationScroll>
-        <AppBar position="fixed">
-           <ToolBar>
-                CIVWARE   
-            </ToolBar> 
+        <AppBar position="fixed" color="secondary">          
+           <Toolbar>
+           <Typography variant="h3" color="primary">CIVWARE</Typography>   
+           </Toolbar>          
         </AppBar>
         </ElevationScroll>
     )

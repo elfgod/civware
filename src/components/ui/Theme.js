@@ -1,4 +1,6 @@
 import { createTheme } from '@mui/material/styles';
+import { grey } from  '@mui/material/colors';
+
 
 const civBlack     = "#010101"
 const civDark      = "#16161a"
@@ -9,12 +11,17 @@ const civLightGrey = "#94a1b2"
 const theme = createTheme({
   palette: {
     primary: {
-      main: `${civBlack}`
+      main: grey[500]
     },
     secondary: {
-      main: `${civDark}`
-    },
+      main: `${civDarkGrey}`
+    }
   },
+  typography: {
+    h3: {
+      fontWeight: 400
+    }
+  }
 });
 
 export default theme;
