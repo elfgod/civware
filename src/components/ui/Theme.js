@@ -19,7 +19,7 @@ const theme = createTheme({
   },
   typography: {
     h3: {
-      fontWeight: 400
+      fontWeight: 500
     }
   }
 });

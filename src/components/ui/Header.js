@@ -2,8 +2,9 @@ import React from 'react'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import { Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+
+import logo from '../../assets/logo.png';
 
 
 function ElevationScroll(props: Props) {
@@ -21,8 +22,13 @@ function ElevationScroll(props: Props) {
 
 const useStyles = makeStyles(theme => ({
   toolbarMargin: {
-    ...theme.mixins.toolbar
+    ...theme.mixins.toolbar,
+    marginBottom: "3em"
+  },
+  logo: {
+    height: "3em"
   }
+
 }))
 
 export default function Header(props) {
@@ -31,8 +37,9 @@ export default function Header(props) {
       <>
         <ElevationScroll>
         <AppBar position="fixed" color="secondary">          
-           <Toolbar>
-           <Typography variant="h3" color="primary">CIVWARE</Typography>   
+           <Toolbar disableGutters>
+            <img src={logo} alt="civware logo" 
+              className={classes.logo}/>            
            </Toolbar>          
         </AppBar>
         </ElevationScroll>
